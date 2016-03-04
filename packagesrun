@@ -1,0 +1,10 @@
+install.packages("rvest")
+
+packages <- c("data.table","rvest","dplyr","lubridate","pipeR","scales","ggplot2","stringr","corrplot","png","jsonlite","tidyr","caTools","Metrics")
+
+install.packages(packages)
+
+require(rvest)
+
+
+lapply(packages,require,character.only=T)
